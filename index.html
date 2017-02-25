@@ -6,25 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     	<title>week-4-game</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css" rel="stylesheet" integrity="sha384-D9XILkoivXN+bcvB2kSOowkIvIcBbNdoDQvfBNsxYAIieZbx8/SI4NeUvrRGCpDi" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 <body>
 	<div class="jumbotron" id="box-wrapper">
-	<div class="container">
+	<div class="container" id="GameCont">
 		<div class="row">
-			<div class="col-md-4">Logo, Designs, Cool Stuff Here</div>
-			<div class="col-md-4"><h3>blakeStrap.html [dark]</h3><p>Normalize.css, all links, and Bootswatch theme injected.</p></div>
-			<div class="col-md-4"><p>Side content, for some side content. Maybe a little more side content.</p></div>
+			<div class="col-sm-12">
+				<div id="wyrm"><img src="assets/images/WyrmPrime.png"></div>
+			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque quo vitae quod enim alias optio sequi quae, nihil sunt dolores in laborum id corporis est, magnam incidunt excepturi ipsam.</p></div>
-			<div class="col-md-4"></div>
+			<div class="col-sm-12">
+			<h2>Void Collector</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12" ><p  class="text-center " id="para1">You will be given a random number at the start of the game. <br>
+			There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score. <br>
+			You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. <br>
+			The value of each crystal is hidden from you until you click on it. <br>
+			Each time when the game starts, the game will change the values of each crystal.</p></div>
+		</div>
+		<div class="row">
+			
+			<div class="col-sm-4">
+				<div class="generate" id="box1">Number to guess goes here<input id="random_value" type="hidden"></div>
+				
+			</div>
+			<div class="col-sm-8">
+			<div id="box3">
+				Wins: <span id="Wins">0</span> | Losses: <span id="Losses">0</span></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="crystals">
+				<img src="assets/images/ArgonCrystal.png" alt="Argon Crystal" class="img-rounded cr1" id="cr1" onclick="newGuess(this.id)">
+				<img src="assets/images/DragonKey.png" alt="Dragon Key" class="img-rounded cr2" id="cr2" onclick="newGuess(this.id)">
+				<img src="assets/images/Endo.png" alt="Endo" class="img-rounded cr3" id="cr3" onclick="newGuess(this.id)">
+				<img src="assets/images/VoidKey.png" alt="Void Key" class="img-rounded cr4" id="cr4" onclick="newGuess(this.id)">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<div id="box2"><h2>Total Score Here</h2></div>
+			</div>
 		</div>
 	</div>
 	</div>
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/javascript/game.js"></script>
+<input type="hidden" id="score" value="0">
+<input type="hidden" id="Winners" value="0">
+<input type="hidden" id="Losers" value="0">
+<input type="hidden" id="NoGo">
 </body>
 </html>
