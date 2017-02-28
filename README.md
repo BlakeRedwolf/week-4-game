@@ -1,8 +1,8 @@
-# Hangman-Game
-HW#3
-# HW - {hw_Hangman-Game}
+# week-4-game
+HW#4
+# HW - {hw_week-4-game}
 
-## https://github.com/BlakeRedwolf/Hangman-Game
+## https://blakeredwolf.github.io/week-4-game/
  - 
 
 ## Description on how to use the app
