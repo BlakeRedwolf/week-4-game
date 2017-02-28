@@ -27,8 +27,8 @@ Push the above changes to GitHub.
 
 ## Technologies Used
 ####
-- HTML 5 for layout.
-- CSS 3 for styling.
+- HTML 5 / Bootstrap for layout.
+- CSS 3 / Bootstrap for styling.
 - JavaScript & JQuery for functionality.
 
 ## Code Explaination
