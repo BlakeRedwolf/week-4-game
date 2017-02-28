@@ -6,6 +6,7 @@
 	background-repeat: no-repeat;
 	min-height: 850px;
 }
+
 #box-wrapper h2{
 	text-align: center;
 	color: yellow;
@@ -15,6 +16,7 @@
 	margin:0;
 	
 }
+
 #box-wrapper p{
 	text-align: center;
 	font-size: 20px;
@@ -28,7 +30,6 @@
 	margin-bottom:15px;
 }
 
-
 #wyrm img {
     float: none;
     margin: 0 auto;
@@ -36,9 +37,19 @@
     max-height: 100%;
     display: block;
 }
+
+#carrier img {
+    float: none;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
 #para1 {
 	border: 2px solid yellow;
 }
+
 #box1 {
 	border: 2px solid yellow;
 	margin-right: 4px;
@@ -77,6 +88,7 @@
 	margin:0;
 	font-size:48px;
 }
+
 .crystals {
 	border: 2px solid yellow;
 	text-align:center;
@@ -87,8 +99,6 @@
     max-height: 150px;
     padding: 10px 0;
 }
-
-
 
 #box2 button {
     font-size: 48px;
